@@ -13,7 +13,7 @@
             margin: 0;
             padding: 20px;
             position: relative;
-            overflow: hidden;
+            min-height: 100vh;
         }
 
         .stars {
@@ -82,8 +82,8 @@
         let width, height;
 
         function resize() {
-            width = canvas.width = window.innerWidth;
-            height = canvas.height = window.innerHeight;
+            width = canvas.width = document.body.clientWidth;
+            height = canvas.height = document.body.offsetHeight;
         }
 
         resize();
