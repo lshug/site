@@ -84,6 +84,12 @@
         <a href="https://www.linkedin.com/in/levan-shugliashvili/" target="_blank">LinkedIn</a>
     </div>
 
+    <!--
+        Having committed to holding to the highest regard the bloodflow that is constant,
+        It's really fucking weird how much I enjoy the way the slightest reminder of her existence
+        Makes my heartbeat feel like an amen break.
+    //-->
+
     <script>
         const canvas = document.querySelector('.stars');
         const ctx = canvas.getContext('2d');
@@ -132,14 +138,14 @@
         }
 
         const particles = [];
-        const numParticles = 500; // Increased for density
+        const numParticles = 500;
 
         for (let i = 0; i < numParticles; i++) {
             particles.push(new Particle());
         }
 
         function animate() {
-            ctx.fillStyle = 'rgba(0, 0, 0, 0.05)'; // Lower alpha for longer trails
+            ctx.fillStyle = 'rgba(0, 0, 0, 0.05)';
             ctx.fillRect(0, 0, width, height);
 
             particles.forEach(p => {
